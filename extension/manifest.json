@@ -1,0 +1,24 @@
+{
+  "name": "Image Checker",
+  "version": "0.1",
+  "description": "Checks if a photo has been edited",
+  "permissions":["activeTab","storage", "declarativeContent"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "page_action":{
+    "default_popup" : "popup.html",
+    "default_icon":{
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+  },
+  "manifest_version": 2
+}
