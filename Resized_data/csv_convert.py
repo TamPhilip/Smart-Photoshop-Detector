@@ -23,7 +23,7 @@ with open('output.csv', 'w') as csvfile:
 		writer.writeheader()
 
 		img = Image.open('/Users/li-tigre/Desktop/Resized_data/tensor_data_untouched/' + file)
-		arr = numpy.array(img)
+		arr = numpy.array2string(numpy.array(img))
 		# print(arr)
 		writer.writerow({'image': arr, 'label': 0})
 
@@ -33,7 +33,7 @@ with open('output.csv', 'w') as csvfile:
 	# writer.writeheader()
 
 		img = Image.open('/Users/li-tigre/Desktop/Resized_data/tensor_data_touched/' + file)
-		arr = numpy.array(img)
+		arr = numpy.array2string(numpy.array(img))
 		# print(arr)
 		writer.writerow({'image': arr, 'label': 1})
 
