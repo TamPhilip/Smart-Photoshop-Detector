@@ -12,7 +12,7 @@ Analyzing images from the web, our AI attempts to recognize photoshopped images.
 ## How we built it
 ***Step 1: Data Analysis*** Using the [Casia](http://forensics.idealtest.org/casiav2/) dataset, we were able to have reliable images that were both photoshopped and original. We first resized the images to 256x256 pixels in order to have a consistent image size for our model, then labelled each image as 'fake' :thumbsdown: or 'real' :thumbsup:.
 
-***Step 2: Training The Model*** We used machine learning to detect patterns in the images and extrapolate to new images. The code can be found [here](https://drive.google.com/file/d/1IZt6MbhnAaZlx4ufcjFvcsSYnUDagWvG/view?usp=sharing).
+***Step 2: Training The Model*** We used machine learning to detect patterns in the images and extrapolate to new images. The code can be found [here](https://drive.google.com/file/d/1IZt6MbhnAaZlx4ufcjFvcsSYnUDagWvG/view?usp=sharing). Ideally, we would like to combine ELA (error level analysis) with a high-pass filter to capture the minor changes in pixels, and analyze the pre-processed pictures with a convolutional neural network.
 
 ***Step 3: Chrome Extension*** How to make this accessible? The simplest way to apply this AI to our everyday life is to have an automatic detector in the browser. Our team decided to create this extension to allow ease of use. Now even a 9 year old can use it! :girl: :boy:.<br />
 It simply shows a red border around images that our AI labelled as photoshopped.
